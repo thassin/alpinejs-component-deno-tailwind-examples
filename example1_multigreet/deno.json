@@ -1,0 +1,14 @@
+{
+  "compilerOptions": {
+    "lib": [ "esnext", "DOM" ],
+  },
+
+  "imports": {
+    "my_alpinejs_import_symbol": "npm:alpinejs@3.14.8/dist/module.esm.js",
+    "my_alpinejs_types_import_symbol": "npm:@types/alpinejs@3.13.11+ts5.6",
+  },
+
+  "tasks": {
+    "tailwind": "deno run -A npm:tailwindcss@^3.4.17 --config=./tailwind.config.js --output=./wwwroot/styles.css"
+  },
+}
